@@ -12,10 +12,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Stack content vertically */
     height: 100vh;
     margin: 0;
 }
 
+/* Container for all content */
 .container {
     background: white;
     padding: 30px 40px;
@@ -27,6 +29,21 @@ body {
     border: 1px solid #ddd;
 }
 
+/* Profile Image Section */
+.image-container {
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 120px; /* You can adjust this size */
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid #fff; /* Optional: Adds a white border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
 h1 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -34,6 +51,7 @@ h1 {
     font-weight: 600;
 }
 
+/* Statement Text */
 #statement {
     font-size: 18px;
     color: #555;
@@ -47,12 +65,14 @@ h1 {
     align-items: center;
 }
 
+/* Buttons Layout */
 .buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
+/* Button Styles */
 button {
     padding: 12px 30px;
     font-size: 16px;
@@ -66,20 +86,22 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Agree Button (Green) */
 .agree-btn {
-    background-color: #28a745;  /* Green */
+    background-color: #28a745;
     color: white;
 }
 
 .agree-btn:hover {
-    background-color: #218838;  /* Darker Green */
+    background-color: #218838;
 }
 
+/* Disagree Button (Red) */
 .disagree-btn {
-    background-color: #dc3545;  /* Red */
+    background-color: #dc3545;
     color: white;
 }
 
 .disagree-btn:hover {
-    background-color: #c82333;  /* Darker Red */
+    background-color: #c82333;
 }
